@@ -1,0 +1,19 @@
+{
+  "name": "facebi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "cors": "^2.5.2"
+  },
+  "license": "UNLICENSED",
+  "description": "facebi"
+}
