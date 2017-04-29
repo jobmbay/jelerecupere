@@ -8,6 +8,6 @@ app
  });
 
 
-app.listen(8080, function () {
+app.listen(process.env.PORT, function () {
     console.log('The server is listening to the port 8080');
 });
